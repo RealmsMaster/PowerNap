@@ -1,0 +1,16 @@
+[
+{
+  "modid": "PowerNap",
+  "name": "Power Nap",
+  "description": "A Minecraft mod for when you just need a nap",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "http://powernap.mjkserver.com",
+  "updateUrl": "",
+  "authorList": ["realmsmaster"],
+  "credits": "thanks to pahimar for your lets mod",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

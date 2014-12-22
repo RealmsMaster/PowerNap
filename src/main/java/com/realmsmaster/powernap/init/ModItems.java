@@ -1,0 +1,14 @@
+package com.realmsmaster.powernap.init;
+import com.realmsmaster.powernap.item.ItemBlanket;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+/**
+ * Created by mike on 12/20/14.
+ */
+public class ModItems {
+    public static final ItemBlanket blanket = new ItemBlanket();
+
+    public static void init(){
+        GameRegistry.registerItem(blanket,"blanket"); //CHANGE TO UPPER CASE B LATER ON!!!
+    }
+}
