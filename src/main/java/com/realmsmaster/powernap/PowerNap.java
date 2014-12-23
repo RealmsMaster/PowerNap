@@ -3,11 +3,13 @@ package com.realmsmaster.powernap;
 import com.realmsmaster.powernap.init.ModItems;
 import com.realmsmaster.powernap.proxy.IProxy;
 import com.realmsmaster.powernap.reference.Reference;
+import com.realmsmaster.powernap.utility.LogHelper;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import sun.rmi.runtime.Log;
 
 import java.sql.Ref;
 
@@ -33,6 +35,8 @@ public class PowerNap {
         //This is stuff that should happen as Forge Mod Loader is getting your mod ready
         //like: Network Handling, Mod Configuration, Initialize your Items, Initialize your Blocks
         ModItems.init();
+
+        LogHelper.info("Pre Init Complete -- Items Loaded Captain!");
     }
 
     //This is the regular init stuff for the mod
@@ -41,6 +45,9 @@ public class PowerNap {
     {
         //This is stuff that should happen as your Mod is initialized
         //like: crafting recipes, register GUIs, tile entities, and general event handlers your Mod uses
+
+
+        LogHelper.info("Regular Init Complete -- Stay on Target!");
     }
 
     //This is the post-init stuff for the mod
@@ -49,5 +56,8 @@ public class PowerNap {
     {
         //This is stuff that should happen after other Mods have finished being initialized
         //like: wrapping up your stuff, checking if some other mod config has been set
+
+
+        LogHelper.info("Post Init Complete -- Man the Torpedoes!");
     }
 }
